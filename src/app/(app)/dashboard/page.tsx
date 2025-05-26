@@ -4,11 +4,10 @@ import { Message } from '@/model/User';
 import { acceptMessageSchema } from '@/schemas/acceptMessageSchema';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useSession } from 'next-auth/react';
-import React, { use, useCallback, useEffect, useState } from 'react'
+import React, {  useCallback, useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import axios, { AxiosError } from 'axios';
 import { ApiResponse } from '@/types/ApiResponse';
-import { set } from 'mongoose';
 import { MessageCard } from '@/components/MessageCard';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
